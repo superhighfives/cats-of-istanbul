@@ -1,0 +1,41 @@
+.header
+  +background-fixed
+  min-height: $section-height
+  h1
+    width: 100%
+    @extend %type-heading
+    @extend %type-72pt
+    text-align: center
+    .italic
+      position: relative
+      top: -0.25em
+      font-size: 0.5em
+      padding: 0 0.3em
+      +border-radius(10em)
+      @extend %type-italic-condensed
+      text-transform: none
+      background: $logo-highlight-color
+      line-height: $section-height
+
+.introduction
+  position: relative
+  padding: $section-padding 0
+  .introduction-map
+    opacity: 0.5
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+  .introduction-title
+    padding-bottom: $section-padding / 2
+    text-align: right
+
+.cat
+  +background-fixed
+  min-height: $section-height
+  border-bottom: 2px solid $section-border-color
+
+.footer
+  +background-fixed
+  min-height: $section-height

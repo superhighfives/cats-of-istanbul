@@ -1,0 +1,145 @@
+$gutter: 24px
+$column: 104px
+$grid_unit: $gutter + $column
+
+$full_width_ten: 10 * $grid_unit - $gutter
+$full_width_eight: 8 * $grid_unit - $gutter
+$full_width_six: 6 * $grid_unit - $gutter
+$full_width_four: 4 * $grid_unit - $gutter
+$full_width_two: 2 * $grid_unit - $gutter
+
+// Colouring for the grid guides
+$guide_colour: rgba(darkblue, 0.03)
+$guide_background: rgba(darkblue, 0.00)
+
+.grid
+  margin: 0 auto
+  padding: 0 $gutter / 2
+
+  .guides
+    z-index: 10
+    position: fixed
+    height: 100%
+    pointer-events: none
+
+    background-color: $guide_background
+    +background-image(linear-gradient(from(left), $guide_colour, $guide_colour $column, transparent $column, transparent $grid_unit))
+    background-size: $grid_unit
+
+  .row
+    +pie-clearfix
+    margin-left: -$gutter
+    &.offset1
+      margin-left: $grid_unit - $gutter
+
+  .column
+    float: left
+    display: block
+    position: relative
+    margin: 0 0 0 $gutter
+    padding: 0
+
+    // This defines .span1 through .span10
+    @for $i from 1 through 10
+      &.span#{$i}
+        width: $i * $grid_unit - $gutter
+      &.push#{$i}
+        margin-left: $i * $grid_unit - $gutter
+      &.pull#{$i}
+        margin-right: $i * $grid_unit - $gutter
+    .visible-breakpoint-two,
+    .visible-breakpoint-four,
+    .visible-breakpoint-six,
+    .visible-breakpoint-eight,
+    .visible-breakpoint-ten
+      display: none
+
+  .centered
+    margin: 0 auto
+    float: none
+    > .row
+      margin-left: -12px
+      margin-right: -12px
+
+  .breakpoint-ten &
+    width: $full_width_ten
+    .guides, .column.full
+      width: $full_width_ten
+
+    @for $i from 1 through 10
+      .column.breakpoint-ten-span#{$i}
+        width: $i * $grid_unit - $gutter
+
+    .hidden-breakpoint-ten
+      display: none
+    .visible-breakpoint-ten
+      display: block
+
+  .breakpoint-eight &
+    width: $full_width_eight
+    .guides, .column.full
+      width: $full_width_eight
+
+    @for $i from 9 through 10
+      .column.span#{$i}
+        width: $full_width_eight
+    @for $i from 1 through 8
+      .column.breakpoint-eight-span#{$i}
+        width: $i * $grid_unit - $gutter
+
+    .hidden-breakpoint-eight
+      display: none
+    .visible-breakpoint-eight
+      display: block
+
+  .breakpoint-six &
+    width: $full_width_six
+    .guides, .column.full
+      width: $full_width_six
+
+    @for $i from 7 through 10
+      .column.span#{$i}
+        width: $full_width_six
+    @for $i from 1 through 6
+      .column.breakpoint-six-span#{$i}
+        width: $i * $grid_unit - $gutter
+
+    .hidden-breakpoint-six
+      display: none
+    .visible-breakpoint-six
+      display: block
+
+  .breakpoint-four &
+    width: $full_width_four
+    .guides, .column.full
+      width: $full_width_four
+
+    @for $i from 5 through 10
+      .column.span#{$i}
+        width: $full_width_four
+    @for $i from 1 through 4
+      .column.breakpoint-four-span#{$i}
+        width: $i * $grid_unit - $gutter
+
+    .hidden-breakpoint-four
+      display: none
+    .visible-breakpoint-four
+      display: block
+
+  .breakpoint-two &
+    width: $full_width_two
+    .guides, .column.full
+      width: $full_width_two
+
+    @for $i from 3 through 10
+      .column.span#{$i}
+        width: $full_width_two
+    @for $i from 1 through 2
+      .column.breakpoint-two-span#{$i}
+        width: $i * $grid_unit - $gutter
+
+    .hidden-breakpoint-two
+      display: none
+    .visible-breakpoint-two
+      display: block
+
