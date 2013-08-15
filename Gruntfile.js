@@ -164,6 +164,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+        ngmin: {
+          dist: {
+            files: [{
+              expand: true,
+              cwd: '<%= yeoman.dist %>/scripts',
+              src: '*.js',
+              dest: '<%= yeoman.dist %>/scripts'
+            }]
+          }
+        },
         // not used since Uglify task does concat,
         // but still available if needed
         /*concat: {
@@ -325,6 +335,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'concat',
+        'ngmin',
         'cssmin',
         'uglify',
         'copy:dist',

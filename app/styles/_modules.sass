@@ -1,5 +1,5 @@
 .header
-  +background-fixed
+  +background-full
   min-height: $section-height
   h1
     width: 100%
@@ -21,6 +21,7 @@
   position: relative
   padding: $section-padding 0
   .introduction-map
+    background: $map-background-color
     opacity: 0.5
     position: absolute
     top: 0
@@ -32,10 +33,38 @@
     text-align: right
 
 .cat
-  +background-fixed
-  min-height: $section-height
+  +background-full
   border-bottom: 2px solid $section-border-color
+  padding-top: $section-height - 232px
+  .map-wrapper
+    background: $map-background-color
+    .map
+      width: 232px
+      height: 232px
+      opacity: 0.5
+  .cat-information
+    height: 232px
+    .cat-location
+      margin: 0
+      position: absolute
+      left: 0
+      bottom: 24px
+      width: 100%
+      dt
+        @extend %type-bold
+        @extend %type-upcase
+        @extend %type-14pt
+        margin-bottom: 5px
+      dd
+        margin: 0
+        @extend %type-18pt
+  &.alt-row
+    .column
+      float: right
+    .cat-location
+      text-align: right
 
 .footer
-  +background-fixed
+  +background-full
   min-height: $section-height
+  

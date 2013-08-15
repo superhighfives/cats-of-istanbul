@@ -44,7 +44,7 @@
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' >
   <![endif]-->
 </head>
-<body>
+<body ng-app="CatsOfIstanbulApp" ng-controller="MainCtrl">
 
   <header class="header" style="background-image: url(images/site-header.jpg)">
     <div class="grid">
@@ -57,7 +57,11 @@
   </header>
 
   <section class="introduction">
-    <div class="introduction-map" id="map">
+    <div class="introduction-map"
+         ng-map="true"
+         data-ng-map-latitude="41.026"
+         data-ng-map-longitude="28.97"
+         data-ng-map-zoom="16">
     </div>
     <div class="grid">
       <div class="row">
@@ -77,8 +81,35 @@
     </div>
   </section>
 
-  <section class="cat" style="background-image: url(images/site-header.jpg)">
-    
+  <section ng-repeat="cat in cats" ng-class-even="'alt-row'" class="cat" style="background-image: url({{ cat.photo }})">
+    <div class="grid">
+      <div class="row">
+        <div class="column full">
+            <div class="row">
+              <div class="column span2">
+                <div class="map-wrapper">
+                  <div class="map"
+                       ng-map="true"
+                       data-ng-map-latitude="{{ cat.map.latitude }}"
+                       data-ng-map-longitude="{{ cat.map.longitude }}"
+                       data-ng-map-zoom="{{ cat.map.zoom }}"
+                       data-ng-map-marker="true">
+                  </div>
+                </div>
+              </div>
+              <div class="column span8">
+                <div class="cat-information">
+                  <dl class="cat-location">
+                    <dt>Nearby</dt>
+                    <dd>Café Partytowne, off Brooks St</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer class="footer" style="background-image: url(images/site-footer.jpg)">
@@ -99,10 +130,13 @@
 
   <!-- build:js scripts/plugins.js -->
   <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
   <!-- endbuild -->
 
   <!-- build:js(.tmp) scripts/main.js -->
-  <script src="scripts/main.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/controllers/main.js"></script>
+  <script src="scripts/directives/ng-map.js"></script>
   <!-- endbuild -->
 </body>
 </html>
