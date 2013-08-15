@@ -1,54 +1,29 @@
 {
   "cats": [
     {
-      "photo": "images/cat-01.jpg",
+      "photo": {
+        "low": "images/cats/lo-res/cat-01.jpg",
+        "high": "images/cats/hi-res/cat-01.jpg"
+      },
       "map": {
         "latitude": 41.026,
         "longitude": 28.97,
-        "zoom": 18
+        "zoom": 18,
+        "nearby": "Café Partytowne, off Brooks St"
       },
-      "nearby": "Café Partytowne, off Brooks St",
       "notes": null
     },
     {
-      "photo": "images/cat-02.jpg",
-      "map": {
-        "latitude": 41.026,
-        "longitude": 28.97,
-        "zoom": 18
-      },
-      "nearby": "Café Partytowne 2, off Brooks St",
-      "notes": "This is a note!"
+      "photo": {
+        "low": "images/cats/lo-res/cat-02.jpg",
+        "high": "images/cats/hi-res/cat-02.jpg"
+      }
     },
     {
-      "photo": "images/cat-03.jpg",
-      "map": {
-        "latitude": 41.026,
-        "longitude": 28.97,
-        "zoom": 18
-      },
-      "nearby": "Café Partytowne 3, off Brooks St",
-      "notes": "This is a note!"
-    },
-    {
-      "photo": "images/cat-04.jpg",
-      "map": {
-        "latitude": 41.026,
-        "longitude": 28.97,
-        "zoom": 18
-      },
-      "nearby": "Café Partytowne 4, off Brooks St",
-      "notes": "This is a note!"
-    },
-    {
-      "photo": "images/cat-05.jpg",
-      "map": {
-        "latitude": 41.026,
-        "longitude": 28.97,
-        "zoom": 18
-      },
-      "nearby": "Café Partytowne 5, off Brooks St",
-      "notes": "This is a note!"
+      "photo": {
+        "low": "images/cats/lo-res/cat-03.jpg",
+        "high": "images/cats/hi-res/cat-03.jpg"
+      }
     }
   ]
 }
