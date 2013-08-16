@@ -42,7 +42,7 @@
   z-index: 10
 
 .introduction
-  +box-shadow(0 0 10px rgba(#000, 0.5))
+  +box-shadow(0 0 10px rgba($introduction-shadow-color, 0.5))
   position: relative
   padding: $section-padding 0
   background: $map-background-color
@@ -114,7 +114,7 @@
     .map
       width: 232px
       height: 232px
-      opacity: 0.5
+      opacity: 0.75
 
   .cat-information-wrapper
     +transition(opacity 0.3s)
@@ -125,6 +125,7 @@
       left: 0
       bottom: 24px
       width: 100%
+      +text-shadow(0 0 15px rgba($base-text-shadow-color, 0.5))
       .cat-notes
         border-bottom: 1px solid $color-orange
         padding-bottom: 24px
