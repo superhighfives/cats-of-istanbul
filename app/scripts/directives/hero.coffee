@@ -19,7 +19,6 @@
           oldString = translateString
           element.css "-webkit-transform", translateString
           element.css "-moz-transform", translateString
-          element.css "-ms-transform", translateString
           element.css "-o-transform", translateString
           element.css "transform", translateString
           element.css "opacity", opacityCal(scale)

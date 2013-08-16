@@ -87,7 +87,7 @@
              ng-lazyload-loaded-class="cat-loaded"
              ng-cloak>
       <div class="cat-loading-image-wrapper">
-        <div style="background-image: url({{ cat.photo.low }})" class="cat-loading-image"></div>
+        <div ng-style="{'background-image': 'url(' + cat.photo.low + ')'}" class="cat-loading-image"></div>
         <div class="preloader"></div>
       </div>
       <div class="grid">

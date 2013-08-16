@@ -1,7 +1,10 @@
+.container
+  position: relative
+
 .hero-wrapper
   height: $section-height
   +perspective(900px)
-  +perspective-origin(50% 0%)
+  +perspective-origin(50% 0)
   background-color: black
   .breakpoint-four &,
   .breakpoint-two &
@@ -13,7 +16,6 @@
     +background-full
     background-image: url(../images/site-header.jpg)
     position: fixed
-
 .logo
   z-index: 5
   position: fixed
@@ -80,7 +82,6 @@
       padding-left: 0
 
 .cat
-  +translate3d(0,0,0)
   +transition(padding-top 1s)
   position: relative
   overflow: hidden
@@ -117,6 +118,7 @@
       opacity: 0.75
 
   .cat-information-wrapper
+    position: relative
     +transition(opacity 0.3s)
     opacity: 0
     height: 232px
@@ -125,7 +127,7 @@
       left: 0
       bottom: 24px
       width: 100%
-      +text-shadow(0 0 15px rgba($base-text-shadow-color, 0.5))
+      +text-shadow(0 0 3px rgba($base-text-shadow-color, 0.5))
       .cat-notes
         border-bottom: 1px solid $color-orange
         padding-bottom: 24px
@@ -168,7 +170,7 @@
   text-align: center
   @extend %type-italic
   p
-    line-height: $section-height
+    padding-top: $section-height / 2
 
 .preloader
   position: absolute
