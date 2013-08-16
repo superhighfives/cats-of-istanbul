@@ -1,14 +1,42 @@
 .container
   position: relative
 
+.chromeframe
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: $chromeframe-background-color
+  z-index: 10
+  h1, p
+    width: 232px
+    margin: 0 auto
+    text-align: center
+  h1
+    @extend %type-heading
+    padding-top: 24px
+  p
+    padding: 24px
+    a
+      color: $chromeframe-link-color
+      border-bottom-color: $chromeframe-link-color
+
 .hero-wrapper
   height: $section-height
-  +perspective(900px)
-  +perspective-origin(50% 0)
   background-color: black
   .breakpoint-four &,
   .breakpoint-two &
     height: $section-height / 1.5
+
+  -webkit-perspective: 900px
+  -moz-perspective: 900px
+  -o-perspective: 900px
+  
+  -webkit-perspective-origin: 50% 0
+  -moz-perspective-origin: 50% 0
+  -o-perspective-origin: 50% 0
+  
   .hero
     +translate3d(0,0,0)
     width: 100%

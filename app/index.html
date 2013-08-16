@@ -9,14 +9,6 @@
   <title>Cats Of Istanbul</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
-  
-  <!-- metaquery -->
-  <meta name="breakpoint" data="two" media="(max-width: 511px)">
-  <meta name="breakpoint" data="four" media="(min-width: 512px) and (max-width: 767px)">
-  <meta name="breakpoint" data="six" media="(min-width: 768px) and (max-width: 1023px)">
-  <meta name="breakpoint" data="eight" media="(min-width: 1024px) and (max-width: 1279px)">
-  <meta name="breakpoint" data="ten" media="(min-width: 1280px)">
-  <!--[if gt IE 8]><!--><script>(function(e,t){var n={breakpoints:{},_events:{},_eventMatchCache:{},_globalEvents:[],bindGlobal:function(e){n._globalEvents.push(e)},bind:function(e,t){(n._events[e]=[]).push(t),c()}},r=function(n){/in/.test(t.readyState)?e.setTimeout(function(){r(n)},9):n()},i=function(e,n,r){t.addEventListener?e.addEventListener(n,r):e.attachEvent("on"+n,r)},s=function(t,n){function o(){s=null,t.apply(i,r)}var r,i,s;return function(){e.clearTimeout(s),s=e.setTimeout(o,n)}},o=function(e,t){return e.className.split(" ").indexOf(t)!==-1},u=function(e,t){var n=e.className.split(" "),r=n.indexOf(t);o(e,t)&&(n.splice(r,1),e.className=n.join(" "))},a=function(e,t){o(e,t)||(e.className=e.className!==""?e.className+" "+t:t)},f=function(e,n){var r="breakpoint-"+n,i=t.documentElement;e?a(i,r):u(i,r)},l=function(e,n){if(!e)return;var r=t.getElementsByTagName("img");for(var i=0;i<r.length;i++){var s=r[i],o=s.getAttribute("data-mq-src");o&&(s.src=o.replace("[breakpoint]",n))}},c=function(){for(var t in n.breakpoints){var r=n.breakpoints[t],i=e.matchMedia(r).matches;if(n._events[t]&&n._eventMatchCache[t]!==i)for(var s=0;s<n._events[t].length;s++){var o=n._events[t][s];n._eventMatchCache[t]=i,typeof o=="function"&&o(i)}if(i)for(var s=0;s<n._globalEvents.length;s++){var o=n._globalEvents[s];typeof o=="function"&&o()}f(i,t),l(i,t)}},h=function(){var e=t.getElementsByTagName("meta");for(var r=0;r<e.length;r++)if(e[r].name==="breakpoint"){var i=e[r].getAttribute("data"),s=e[r].getAttribute("media");n.breakpoints[i]=s}},p=function(){h(),c()},d=function(){h(),i(e,"resize",s(function(){c()},50)),c()};e.metaQuery=n,p(),r(d)})(this,this.document);</script><!--<![endif]-->
 
   <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
@@ -24,7 +16,16 @@
   
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/matchmedia/matchMedia.js"></script>
   <!-- endbuild -->
+
+  <!-- metaquery -->
+  <meta name="breakpoint" content="two" media="(max-width: 511px)">
+  <meta name="breakpoint" content="four" media="(min-width: 512px) and (max-width: 767px)">
+  <meta name="breakpoint" content="six" media="(min-width: 768px) and (max-width: 1023px)">
+  <meta name="breakpoint" content="eight" media="(min-width: 1024px) and (max-width: 1279px)">
+  <meta name="breakpoint" content="ten" media="(min-width: 1280px)">
+  <!--[if gt IE 8]><!--><script>!function(a,b){var c={breakpoints:{},_namedEvents:{},_eventMatchCache:{},_globalEvents:[],onBreakpointChange:function(){var a=Array.prototype.slice.call(arguments),b=a.pop(),d=a.pop();"undefined"==typeof d?c._globalEvents.push(b):(c._namedEvents[d]=[]).push(b),l()}},d=function(c){/in/.test(b.readyState)?a.setTimeout(function(){d(c)},9):c()},e=function(a,c,d){b.addEventListener?a.addEventListener(c,d):a.attachEvent("on"+c,d)},f=function(b,c){function d(){g=null,b.apply(f,e)}var e,f,g;return function(){a.clearTimeout(g),g=a.setTimeout(d,c)}},g=function(a,b){return-1!==a.className.split(" ").indexOf(b)},h=function(a,b){var c=a.className.split(" "),d=c.indexOf(b);g(a,b)&&(c.splice(d,1),a.className=c.join(" "))},i=function(a,b){g(a,b)||(a.className=""!==a.className?a.className+" "+b:b)},j=function(a,c){var d="breakpoint-"+c,e=b.documentElement;a?i(e,d):h(e,d)},k=function(a,c){if(a)for(var d=b.getElementsByTagName("img"),e=0;e<d.length;e++){var f=d[e],g=f.getAttribute("data-mq-src");g&&(f.src=g.replace("[breakpoint]",c))}},l=function(){for(var b in c.breakpoints){var d=c.breakpoints[b],e=a.matchMedia(d).matches;if(c._namedEvents[b]&&c._eventMatchCache[b]!==e)for(var f=0;f<c._namedEvents[b].length;f++){var g=c._namedEvents[b][f];c._eventMatchCache[b]=e,"function"==typeof g&&g(e)}if(e)for(var h=0;h<c._globalEvents.length;h++){var i=c._globalEvents[h];"function"==typeof i&&i()}j(e,b),k(e,b)}},m=function(){for(var a=b.getElementsByTagName("meta"),d=0;d<a.length;d++)if("breakpoint"===a[d].name){var e=a[d].getAttribute("content"),f=a[d].getAttribute("media");c.breakpoints[e]=f}},n=function(){m(),l()},o=function(){m(),e(a,"resize",f(function(){l()},50)),l()};a.metaQuery=c,n(),d(o)}(this,this.document);</script><!--<![endif]-->
 
   <!-- webfonts -->
   <script type="text/javascript">
@@ -139,20 +140,24 @@
 
   <div class="preloader site-preloader"></div>
 
-  <!--[if lt IE 7]>
-  <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <!--[if lt IE 9]>
+  <div class="chromeframe">
+    <h1>Oh no! No cats!</h1>
+    <p>Meow! You are using an <strong>outdated</strong> browser, which means you can't visit <strong>Cats of Istanbul</strong>. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  </div>
   <![endif]-->
 
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
-  var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-21848111-7', 'charliegleason.com');
+    ga('send', 'pageview');
   </script>
 
   <!-- build:js scripts/plugins.js -->
-  <script src="bower_components/jquery/jquery.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <!-- endbuild -->
 
