@@ -46,91 +46,103 @@
 </head>
 <body ng-app="CatsOfIstanbulApp" ng-controller="MainCtrl">
 
-  <header class="header" style="background-image: url(images/site-header.jpg)">
-    <div class="grid">
-      <div class="row">
-        <div class="column full">
-          <h1>Cats <span class="italic">of</span> Istanbul</h1>
-        </div>
-      </div>
-    </div>
-  </header>
+  <div class="container">
 
-  <section class="introduction">
-    <div class="introduction-map"
-         ng-map="true"
-         data-ng-map-latitude="41.026"
-         data-ng-map-longitude="28.97"
-         data-ng-map-zoom="16">
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="column span6 pull4">
-          <h2 class="introduction-title">In August 2013, I  went to Istanbul</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column span5 push4 pull1">
-          <div class="introduction-description">
-            <p><strong>While there, I saw cats.</strong> Loads and loads of them. There were big ones and little ones and old ones and sick ones and funny ones. There were on every street, in every corner. We asked our tour guide, and she said they had always been there, and that <strong>they made people happy.</strong></p>
-            <p>So over the next five days I took photos of them.</p>
-            <p>These are the <strong>cats of Istanbul.</strong></p>
+    <header class="header" style="background-image: url(images/site-header.jpg)">
+      <div class="grid">
+        <div class="row">
+          <div class="column full">
+            <h1>Cats <span class="italic">of</span> Istanbul</h1>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section ng-repeat="cat in cats"
-           ng-class-even="'alt-row'"
-           class="cat"
-           ng-lazyload="{{ cat.photo.high }}"
-           ng-lazyload-loading-class="cat-loading"
-           ng-lazyload-loaded-class="cat-loaded">
-    <div class="cat-loading-image-wrapper">
-      <div style="background-image: url({{ cat.photo.low }})" class="cat-loading-image"></div>
-      <div class="cat-loading-spinner"></div>
-    </div>
-    <div class="grid">
-      <div class="row">
-        <div class="column full">
-            <div class="row">
-              <div class="column span2">
-                <div class="map-wrapper">
-                  <div class="map"
-                       ng-map="{{ cat.map }}"
-                       ng-show="{{ cat.map }}"
-                       data-ng-map-latitude="{{ cat.map.latitude }}"
-                       data-ng-map-longitude="{{ cat.map.longitude }}"
-                       data-ng-map-zoom="{{ cat.map.zoom }}"
-                       data-ng-map-marker="true">
+    <section class="introduction">
+      <div class="introduction-map"
+           ng-map="true"
+           data-ng-map-latitude="41.026"
+           data-ng-map-longitude="28.97"
+           data-ng-map-zoom="16">
+      </div>
+      <div class="grid">
+        <div class="row">
+          <div class="column span6 pull4">
+            <h2 class="introduction-title">In August 2013, I  went to Istanbul</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column span5 push4 pull1">
+            <div class="introduction-description">
+              <p><strong>While there, I saw cats.</strong> Loads and loads of them. There were big ones and little ones and old ones and sick ones and funny ones. There were on every street, in every corner. We asked our tour guide, and she said they had always been there, and that <strong>they made people happy.</strong></p>
+              <p>So over the next five days I took photos of them.</p>
+              <p>These are the <strong>cats of Istanbul.</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section ng-repeat="cat in cats"
+             ng-class-even="'alt-row'"
+             class="cat"
+             ng-lazyload="{{ cat.photo.high }}"
+             ng-lazyload-index="{{ $index }}"
+             ng-lazyload-loaded-class="cat-loaded"
+             ng-cloak>
+      <div class="cat-loading-image-wrapper">
+        <div style="background-image: url({{ cat.photo.low }})" class="cat-loading-image"></div>
+        <div class="preloader"></div>
+      </div>
+      <div class="grid">
+        <div class="row">
+          <div class="column full">
+              <div class="row">
+                <div class="column span2">
+                  <div class="map-wrapper">
+                    <div class="map"
+                         ng-map="{{ cat.map }}"
+                         ng-show="{{ cat.map }}"
+                         data-ng-map-latitude="{{ cat.map.latitude }}"
+                         data-ng-map-longitude="{{ cat.map.longitude }}"
+                         data-ng-map-zoom="{{ cat.map.zoom }}"
+                         data-ng-map-marker="true">
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="column span8">
-                <div class="cat-information">
-                  <dl class="cat-location" ng-show="cat.map.nearby">
-                    <dt>Nearby</dt>
-                    <dd>{{ cat.map.nearby }}</dd>
-                  </dl>
+                <div class="column span8">
+                  <div class="cat-information-wrapper">
+                    <div class="cat-information">
+                      <div class="cat-notes" ng-show="cat.notes">
+                        {{ cat.notes }}
+                      </div>
+                      <dl class="cat-location" ng-show="cat.map.nearby">
+                        <dt>Nearby</dt>
+                        <dd>{{ cat.map.nearby }}</dd>
+                      </dl>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer" style="background-image: url(images/site-footer.jpg)">
-    <div class="grid">
-      <div class="row">
-        <div class="column full">
-          <p>Made by <a href="http://charliegleason.com/" title="charliegleason.com">Charlie</a>, who really, really loves Istanbul.</p>
+    <footer class="footer" style="background-image: url(images/site-footer.jpg)">
+      <div class="grid">
+        <div class="row">
+          <div class="column full">
+            <p>Made by <a href="http://charliegleason.com/" title="charliegleason.com">Charlie</a>, who really, really loves Istanbul.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
+
+  <div class="preloader site-preloader"></div>
 
   <!--[if lt IE 7]>
   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>

@@ -35,10 +35,14 @@ strong
 
 // hide flash of unstyled text
 html
-  body
+  .container
     opacity: 1
     +transition(opacity 1s)
+  .site-preloader
+    display: none
   &.wf-loading
-    body
+    .site-preloader
+      display: block
+    .container
       opacity: 0
       +transition(none)

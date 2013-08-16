@@ -1,15 +1,16 @@
 ((app) ->
   "use strict"
 
-  app.directive "ngLazyload", ["$document", "$parse", ($document, $parse) ->
+  app.directive "ngLazyload", ["$document", "$timeout", ($document, $timeout) ->
     restrict: "A"
     link: (scope, element, attrs) ->
-      src = attrs.ngLazyload
-      img = $document[0].createElement("img")
-      img.onload = ->
-        element.removeClass attrs.ngLazyloadLoadingClass if angular.isDefined(attrs.ngLazyloadLoadingClass)
-        element.addClass attrs.ngLazyloadLoadedClass if angular.isDefined(attrs.ngLazyloadLoadedClass)
-        element.css "background-image": "url(" + @src + ")"
-      img.src = src
+      $timeout (->
+        src = attrs.ngLazyload
+        img = $document[0].createElement("img")
+        img.onload = ->
+          element.addClass attrs.ngLazyloadLoadedClass if angular.isDefined(attrs.ngLazyloadLoadedClass)
+          element.css "background-image": "url(" + @src + ")"
+        img.src = src
+      ), attrs.ngLazyloadIndex * 1000
   ]
 ) angular.module("CatsOfIstanbulApp")
