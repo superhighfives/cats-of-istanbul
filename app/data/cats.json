@@ -2,8 +2,8 @@
   "cats": [
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-01.jpg",
-        "high": "images/cats/hi-res/cat-01.jpg"
+        "low": "images/lo-res/cat-01.jpg",
+        "high": "images/hi-res/cat-01.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -14,8 +14,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-02.jpg",
-        "high": "images/cats/hi-res/cat-02.jpg"
+        "low": "images/lo-res/cat-02.jpg",
+        "high": "images/hi-res/cat-02.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -26,8 +26,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-03.jpg",
-        "high": "images/cats/hi-res/cat-03.jpg"
+        "low": "images/lo-res/cat-03.jpg",
+        "high": "images/hi-res/cat-03.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -38,8 +38,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-04.jpg",
-        "high": "images/cats/hi-res/cat-04.jpg"
+        "low": "images/lo-res/cat-04.jpg",
+        "high": "images/hi-res/cat-04.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -50,8 +50,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-05.jpg",
-        "high": "images/cats/hi-res/cat-05.jpg"
+        "low": "images/lo-res/cat-05.jpg",
+        "high": "images/hi-res/cat-05.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -62,8 +62,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-06.jpg",
-        "high": "images/cats/hi-res/cat-06.jpg"
+        "low": "images/lo-res/cat-06.jpg",
+        "high": "images/hi-res/cat-06.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -74,8 +74,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-07.jpg",
-        "high": "images/cats/hi-res/cat-07.jpg"
+        "low": "images/lo-res/cat-07.jpg",
+        "high": "images/hi-res/cat-07.jpg"
       },
       "map": {
         "latitude": 41.030,
@@ -86,8 +86,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-08.jpg",
-        "high": "images/cats/hi-res/cat-08.jpg"
+        "low": "images/lo-res/cat-08.jpg",
+        "high": "images/hi-res/cat-08.jpg"
       },
       "map": {
         "latitude": 41.030,
@@ -98,8 +98,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-09.jpg",
-        "high": "images/cats/hi-res/cat-09.jpg"
+        "low": "images/lo-res/cat-09.jpg",
+        "high": "images/hi-res/cat-09.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -110,8 +110,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-10.jpg",
-        "high": "images/cats/hi-res/cat-10.jpg"
+        "low": "images/lo-res/cat-10.jpg",
+        "high": "images/hi-res/cat-10.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -122,8 +122,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-11.jpg",
-        "high": "images/cats/hi-res/cat-11.jpg"
+        "low": "images/lo-res/cat-11.jpg",
+        "high": "images/hi-res/cat-11.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -134,8 +134,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-12.jpg",
-        "high": "images/cats/hi-res/cat-12.jpg"
+        "low": "images/lo-res/cat-12.jpg",
+        "high": "images/hi-res/cat-12.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -146,8 +146,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-13.jpg",
-        "high": "images/cats/hi-res/cat-13.jpg"
+        "low": "images/lo-res/cat-13.jpg",
+        "high": "images/hi-res/cat-13.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -158,8 +158,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-14.jpg",
-        "high": "images/cats/hi-res/cat-14.jpg"
+        "low": "images/lo-res/cat-14.jpg",
+        "high": "images/hi-res/cat-14.jpg"
       },
       "map": {
         "latitude": 41.027,
@@ -170,8 +170,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-15.jpg",
-        "high": "images/cats/hi-res/cat-15.jpg"
+        "low": "images/lo-res/cat-15.jpg",
+        "high": "images/hi-res/cat-15.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -182,8 +182,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-16.jpg",
-        "high": "images/cats/hi-res/cat-16.jpg"
+        "low": "images/lo-res/cat-16.jpg",
+        "high": "images/hi-res/cat-16.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -194,8 +194,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-17.jpg",
-        "high": "images/cats/hi-res/cat-17.jpg"
+        "low": "images/lo-res/cat-17.jpg",
+        "high": "images/hi-res/cat-17.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -206,8 +206,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-18.jpg",
-        "high": "images/cats/hi-res/cat-18.jpg"
+        "low": "images/lo-res/cat-18.jpg",
+        "high": "images/hi-res/cat-18.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -218,8 +218,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-19.jpg",
-        "high": "images/cats/hi-res/cat-19.jpg"
+        "low": "images/lo-res/cat-19.jpg",
+        "high": "images/hi-res/cat-19.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -230,8 +230,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-20.jpg",
-        "high": "images/cats/hi-res/cat-20.jpg"
+        "low": "images/lo-res/cat-20.jpg",
+        "high": "images/hi-res/cat-20.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -242,8 +242,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-21.jpg",
-        "high": "images/cats/hi-res/cat-21.jpg"
+        "low": "images/lo-res/cat-21.jpg",
+        "high": "images/hi-res/cat-21.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -254,8 +254,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-22.jpg",
-        "high": "images/cats/hi-res/cat-22.jpg"
+        "low": "images/lo-res/cat-22.jpg",
+        "high": "images/hi-res/cat-22.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -266,8 +266,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-23.jpg",
-        "high": "images/cats/hi-res/cat-23.jpg"
+        "low": "images/lo-res/cat-23.jpg",
+        "high": "images/hi-res/cat-23.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -278,8 +278,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-24.jpg",
-        "high": "images/cats/hi-res/cat-24.jpg"
+        "low": "images/lo-res/cat-24.jpg",
+        "high": "images/hi-res/cat-24.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -290,8 +290,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-25.jpg",
-        "high": "images/cats/hi-res/cat-25.jpg"
+        "low": "images/lo-res/cat-25.jpg",
+        "high": "images/hi-res/cat-25.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -302,8 +302,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-26.jpg",
-        "high": "images/cats/hi-res/cat-26.jpg"
+        "low": "images/lo-res/cat-26.jpg",
+        "high": "images/hi-res/cat-26.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -314,8 +314,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-27.jpg",
-        "high": "images/cats/hi-res/cat-27.jpg"
+        "low": "images/lo-res/cat-27.jpg",
+        "high": "images/hi-res/cat-27.jpg"
       },
       "map": {
         "latitude": 41.026,
@@ -326,8 +326,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-28.jpg",
-        "high": "images/cats/hi-res/cat-28.jpg"
+        "low": "images/lo-res/cat-28.jpg",
+        "high": "images/hi-res/cat-28.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -338,8 +338,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-29.jpg",
-        "high": "images/cats/hi-res/cat-29.jpg"
+        "low": "images/lo-res/cat-29.jpg",
+        "high": "images/hi-res/cat-29.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -350,8 +350,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-30.jpg",
-        "high": "images/cats/hi-res/cat-30.jpg"
+        "low": "images/lo-res/cat-30.jpg",
+        "high": "images/hi-res/cat-30.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -362,8 +362,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-31.jpg",
-        "high": "images/cats/hi-res/cat-31.jpg"
+        "low": "images/lo-res/cat-31.jpg",
+        "high": "images/hi-res/cat-31.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -374,8 +374,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-32.jpg",
-        "high": "images/cats/hi-res/cat-32.jpg"
+        "low": "images/lo-res/cat-32.jpg",
+        "high": "images/hi-res/cat-32.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -386,8 +386,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-33.jpg",
-        "high": "images/cats/hi-res/cat-33.jpg"
+        "low": "images/lo-res/cat-33.jpg",
+        "high": "images/hi-res/cat-33.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -398,8 +398,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-34.jpg",
-        "high": "images/cats/hi-res/cat-34.jpg"
+        "low": "images/lo-res/cat-34.jpg",
+        "high": "images/hi-res/cat-34.jpg"
       },
       "map": {
         "latitude": 41.029,
@@ -410,8 +410,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-35.jpg",
-        "high": "images/cats/hi-res/cat-35.jpg"
+        "low": "images/lo-res/cat-35.jpg",
+        "high": "images/hi-res/cat-35.jpg"
       },
       "map": {
         "latitude": 41.025,
@@ -422,8 +422,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-36.jpg",
-        "high": "images/cats/hi-res/cat-36.jpg"
+        "low": "images/lo-res/cat-36.jpg",
+        "high": "images/hi-res/cat-36.jpg"
       },
       "map": {
         "latitude": 41.025,
@@ -434,8 +434,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-37.jpg",
-        "high": "images/cats/hi-res/cat-37.jpg"
+        "low": "images/lo-res/cat-37.jpg",
+        "high": "images/hi-res/cat-37.jpg"
       },
       "map": {
         "latitude": 41.031,
@@ -446,8 +446,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-38.jpg",
-        "high": "images/cats/hi-res/cat-38.jpg"
+        "low": "images/lo-res/cat-38.jpg",
+        "high": "images/hi-res/cat-38.jpg"
       },
       "map": {
         "latitude": 41.031,
@@ -458,8 +458,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-39.jpg",
-        "high": "images/cats/hi-res/cat-39.jpg"
+        "low": "images/lo-res/cat-39.jpg",
+        "high": "images/hi-res/cat-39.jpg"
       },
       "map": {
         "latitude": 41.031,
@@ -470,8 +470,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-40.jpg",
-        "high": "images/cats/hi-res/cat-40.jpg"
+        "low": "images/lo-res/cat-40.jpg",
+        "high": "images/hi-res/cat-40.jpg"
       },
       "map": {
         "latitude": 41.031,
@@ -482,8 +482,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-41.jpg",
-        "high": "images/cats/hi-res/cat-41.jpg"
+        "low": "images/lo-res/cat-41.jpg",
+        "high": "images/hi-res/cat-41.jpg"
       },
       "map": {
         "latitude": 41.031,
@@ -494,8 +494,8 @@
     },
     {
       "photo": {
-        "low": "images/cats/lo-res/cat-42.jpg",
-        "high": "images/cats/hi-res/cat-42.jpg"
+        "low": "images/lo-res/cat-42.jpg",
+        "high": "images/hi-res/cat-42.jpg"
       },
       "map": {
         "latitude": 41.026,
