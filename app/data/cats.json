@@ -486,18 +486,6 @@
         "high": "images/hi-res/cat-41.jpg"
       },
       "map": {
-        "latitude": 41.031,
-        "longitude": 28.974,
-        "zoom": 18,
-        "nearby": "The Pera Hotel, Meşrutiyet Cd, Asmalı Mescit Mh., Pera"
-      }
-    },
-    {
-      "photo": {
-        "low": "images/lo-res/cat-42.jpg",
-        "high": "images/hi-res/cat-42.jpg"
-      },
-      "map": {
         "latitude": 41.026,
         "longitude": 28.983,
         "zoom": 16,
