@@ -93,30 +93,29 @@
       <div class="grid">
         <div class="row">
           <div class="column full">
-              <div class="row">
-                <div class="column span4 breakpoint-four-span2 breakpoint-eight-span6 breakpoint-ten-span8">
-                  <div class="cat-information-wrapper">
-                    <div class="cat-information">
-                      <div class="cat-notes" ng-show="cat.notes">
-                        {{ cat.notes }}
-                      </div>
-                      <dl class="cat-location" ng-show="cat.map.nearby">
-                        <dt>Nearby</dt>
-                        <dd>{{ cat.map.nearby }}</dd>
-                      </dl>
+            <div class="row">
+              <div class="column span4 breakpoint-four-span2 breakpoint-eight-span6 breakpoint-ten-span8">
+                <div class="cat-information-wrapper">
+                  <div class="cat-information">
+                    <div class="cat-notes" ng-show="cat.notes">
+                      {{ cat.notes }}
                     </div>
+                    <dl class="cat-location" ng-show="cat.map.nearby">
+                      <dt>Nearby</dt>
+                      <dd>{{ cat.map.nearby }}</dd>
+                    </dl>
                   </div>
                 </div>
-                <div class="column span2">
-                  <div class="map-wrapper">
-                    <div class="map"
-                         ng-map="{{ cat.map }}"
-                         ng-show="{{ cat.map }}"
-                         data-ng-map-latitude="{{ cat.map.latitude }}"
-                         data-ng-map-longitude="{{ cat.map.longitude }}"
-                         data-ng-map-zoom="{{ cat.map.zoom }}"
-                         data-ng-map-marker="true">
-                    </div>
+              </div>
+              <div class="column span2">
+                <div class="map-wrapper">
+                  <div class="map"
+                       ng-map="{{ cat.map }}"
+                       ng-show="{{ cat.map }}"
+                       data-ng-map-latitude="{{ cat.map.latitude }}"
+                       data-ng-map-longitude="{{ cat.map.longitude }}"
+                       data-ng-map-zoom="{{ cat.map.zoom }}"
+                       data-ng-map-marker="true">
                   </div>
                 </div>
               </div>
@@ -126,7 +125,7 @@
       </div>
     </section>
 
-    <footer class="footer" style="background-image: url(images/site-footer.jpg)">
+    <footer class="footer">
       <div class="grid">
         <div class="row">
           <div class="column full">
