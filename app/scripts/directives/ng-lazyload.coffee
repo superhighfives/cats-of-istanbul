@@ -1,7 +1,7 @@
 ((app) ->
   "use strict"
 
-  app.directive "ngLazyload", ["$document", "$timeout", ($document, $timeout) ->
+  app.directive "ngLazyload", ($document, $timeout) ->
     restrict: "A"
     link: (scope, element, attrs) ->
       $timeout (->
@@ -12,5 +12,5 @@
           element.css "background-image": "url(" + @src + ")"
         img.src = src
       ), attrs.ngLazyloadIndex * 1000
-  ]
+      
 ) angular.module("CatsOfIstanbulApp")

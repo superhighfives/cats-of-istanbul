@@ -47,16 +47,12 @@
 <body ng-app="CatsOfIstanbulApp" ng-controller="MainCtrl">
 
   <div class="container">
+    
+    <h1 class="logo">Cats <span class="italic">of</span> Istanbul</h1>
 
-    <header class="header" style="background-image: url(images/site-header.jpg)">
-      <div class="grid">
-        <div class="row">
-          <div class="column full">
-            <h1>Cats <span class="italic">of</span> Istanbul</h1>
-          </div>
-        </div>
-      </div>
-    </header>
+    <div class="hero-wrapper">
+      <div hero class="hero" style="background-image: url(images/site-header.jpg)"></div>
+    </div>
 
     <section class="introduction">
       <div class="introduction-map"
@@ -67,12 +63,12 @@
       </div>
       <div class="grid">
         <div class="row">
-          <div class="column span6 pull4">
-            <h2 class="introduction-title">In August 2013, I  went to Istanbul</h2>
+          <div class="column span6">
+            <h2 class="introduction-title">In August 2013, I went to Istanbul</h2>
           </div>
         </div>
         <div class="row">
-          <div class="column span5 push4 pull1">
+          <div class="column full">
             <div class="introduction-description">
               <p><strong>While there, I saw cats.</strong> Loads and loads of them. There were big ones and little ones and old ones and sick ones and funny ones. There were on every street, in every corner. We asked our tour guide, and she said they had always been there, and that <strong>they made people happy.</strong></p>
               <p>So over the next five days I took photos of them.</p>
@@ -98,19 +94,7 @@
         <div class="row">
           <div class="column full">
               <div class="row">
-                <div class="column span2">
-                  <div class="map-wrapper">
-                    <div class="map"
-                         ng-map="{{ cat.map }}"
-                         ng-show="{{ cat.map }}"
-                         data-ng-map-latitude="{{ cat.map.latitude }}"
-                         data-ng-map-longitude="{{ cat.map.longitude }}"
-                         data-ng-map-zoom="{{ cat.map.zoom }}"
-                         data-ng-map-marker="true">
-                    </div>
-                  </div>
-                </div>
-                <div class="column span8">
+                <div class="column span4 breakpoint-four-span2 breakpoint-eight-span6 breakpoint-ten-span8">
                   <div class="cat-information-wrapper">
                     <div class="cat-information">
                       <div class="cat-notes" ng-show="cat.notes">
@@ -120,6 +104,18 @@
                         <dt>Nearby</dt>
                         <dd>{{ cat.map.nearby }}</dd>
                       </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="column span2">
+                  <div class="map-wrapper">
+                    <div class="map"
+                         ng-map="{{ cat.map }}"
+                         ng-show="{{ cat.map }}"
+                         data-ng-map-latitude="{{ cat.map.latitude }}"
+                         data-ng-map-longitude="{{ cat.map.longitude }}"
+                         data-ng-map-zoom="{{ cat.map.zoom }}"
+                         data-ng-map-marker="true">
                     </div>
                   </div>
                 </div>
@@ -166,6 +162,7 @@
   <script src="scripts/controllers/main.js"></script>
   <script src="scripts/directives/ng-map.js"></script>
   <script src="scripts/directives/ng-lazyload.js"></script>
+  <script src="scripts/directives/hero.js"></script>
   <!-- endbuild -->
 </body>
 </html>

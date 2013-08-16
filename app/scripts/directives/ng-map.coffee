@@ -3,7 +3,6 @@
 
   app.directive "ngMap", ->
     (scope, element, attrs) ->
-      
       if attrs.ngMap
         map = L.mapbox.map element[0], 'superhighfives.map-6dm1u71l', {
           zoomControl: false,
