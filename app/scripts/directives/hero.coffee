@@ -14,13 +14,7 @@
         Math.max 0, 1 - scale / 1000
 
       setBackgroundSize = (scale) ->
-        translateString = "translate3d(0," + yCalc(scale) + "px, " + zCalc(scale) + "px) scale(1.5)"
-        if oldString isnt translateString
-          oldString = translateString
-          element.css "-webkit-transform", translateString
-          element.css "-moz-transform", translateString
-          element.css "-o-transform", translateString
-          element.css "transform", translateString
+        if $document[0].width > 488
           element.css "opacity", opacityCal(scale)
 
       setBackgroundSize 0

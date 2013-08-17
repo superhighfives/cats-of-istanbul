@@ -12,6 +12,7 @@
           scrollWheelZoom: false,
           dragging: false
         }
+        map.dragging.disable()
         map.setView [attrs.ngMapLatitude, attrs.ngMapLongitude], attrs.ngMapZoom
 
         if attrs.ngMapMarker
